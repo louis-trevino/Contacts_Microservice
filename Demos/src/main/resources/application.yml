@@ -1,0 +1,18 @@
+server:
+  port: 30014
+  servlet:
+    context-path: /contact-service
+spring:
+  application:
+    name: contact-service
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: contact-service
+
+config:
+  name: localhost
